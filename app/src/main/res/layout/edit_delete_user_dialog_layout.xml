@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:padding="16dp"
+    android:background="@color/navy"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/editUserLabel_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:text="Edit User"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/firstNameEditDailogEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPersonName"
+        android:hint="@string/firstnameEditText_hint"
+        android:backgroundTint="@color/logo_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toBottomOf="@+id/editUserLabel_TextView" />
+
+    <EditText
+        android:id="@+id/lastNameEditDailogEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPersonName"
+        android:hint="@string/lastnameEditText_hint"
+        android:backgroundTint="@color/logo_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameEditDailogEditText" />
+
+    <EditText
+        android:id="@+id/userNameEditDailogEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPersonName"
+        android:hint="@string/usernameEditText_hint"
+        android:backgroundTint="@color/logo_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameEditDailogEditText" />
+
+
+    <EditText
+        android:id="@+id/passwordEditDialogEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:hint="@string/passwordEditText_hint"
+        android:backgroundTint="@color/logo_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toBottomOf="@+id/userNameEditDailogEditText" />
+
+
+    <EditText
+        android:id="@+id/confirmPasswordEditDialogEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:hint="@string/confirmPasswordEditText_hint"
+        android:backgroundTint="@color/logo_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditDialogEditText" />
+
+    <Button
+        android:id="@+id/editUserDialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Edit"
+        android:backgroundTint="@color/logo_orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEditDialogEditText" />
+
+    <Button
+        android:id="@+id/deleteDialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Delete"
+        android:backgroundTint="@color/logo_orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEditDialogEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

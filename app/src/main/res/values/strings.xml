@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Cocktail Bar</string>
+    <string name="passwordEditText_hint">Password</string>
+    <string name="confirmPasswordEditText_hint">Confirm Password</string>
+    <string name="usernameEditText_hint">Username</string>
+    <string name="firstnameEditText_hint">Firstname</string>
+    <string name="lastnameEditText_hint">Lastname</string>
+    <string name="logoImageView_description">Logo</string>
+    <string name="loginButton_text">Login</string>
+    <string name="registerButton_text">Register</string>
+    <string name="registerTextView_text">New User? Register!</string>
+    <string name="registerLabelTextView_text">Enter your information:</string>
+    <string name="nav_headerImageView_description">Profile Picture</string>
+    <string name="nav_headerTextView_email">admin@cocktailBar.com</string>
+    <string name="navigation_draw_open">Open navigation drawer</string>
+    <string name="navigation_draw_close">Close navigation drawer</string>
+    <string name="drawerMenuItem_nav_home_text">Home</string>
+    <string name="drawerMenuItem_nav_alcoholic_text">Alcoholic</string>
+    <string name="drawerMenuItem_nav_nonAlcoholic_text">Non Alcoholic</string>
+    <string name="drawerMenuItem_UsrManagement_text">User Account Management</string>
+    <string name="drawerMenuItem_nav_Users_text">Users</string>
+    <string name="Ingredients_text">Ingredients: </string>
+</resources>

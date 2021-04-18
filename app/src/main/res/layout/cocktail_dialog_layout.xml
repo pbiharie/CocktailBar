@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:padding="16dp"
+    android:background="@color/navy"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/cocktkailThumbnail_ImageView"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_launcher_cocktail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dialogCocktailName_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cocktkailThumbnail_ImageView" />
+
+    <TextView
+        android:id="@+id/dialogCocktailCategory_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category: "
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogCocktailName_TextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/dialogCocktailDrinkType_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drink Type: "
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogCocktailCategory_TextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/dialogCocktailGlass_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Glass: "
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogCocktailDrinkType_TextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/ingredientsHorizontalLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogCocktailGlass_TextView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/Ingredients_text"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textAlignment="textStart"
+            app:layout_constraintBottom_toBottomOf="@+id/ingredientsHorizontalLinearLayout"
+            app:layout_constraintEnd_toEndOf="@+id/ingredientsHorizontalLinearLayout"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/ingredientsHorizontalLinearLayout"
+            app:layout_constraintTop_toTopOf="@+id/ingredientsHorizontalLinearLayout"
+            app:layout_constraintVertical_bias="0.041" />
+
+
+        <LinearLayout
+            android:id="@+id/ingredientsVerticalLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/ingredientsHorizontalLinearLayout"
+            app:layout_constraintHorizontal_bias="0.937"
+            app:layout_constraintStart_toStartOf="@+id/ingredientsHorizontalLinearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/dialogCocktailGlass_TextView">
+
+
+            <TextView
+                android:id="@+id/dialogCocktailIngredients_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="- Ingredients "
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textAlignment="textStart"
+                app:layout_constraintBottom_toBottomOf="@+id/ingredientsVerticalLinearLayout"
+                app:layout_constraintEnd_toEndOf="@+id/ingredientsVerticalLinearLayout"
+                app:layout_constraintHorizontal_bias="0.058"
+                app:layout_constraintStart_toStartOf="@+id/ingredientsVerticalLinearLayout"
+                app:layout_constraintTop_toTopOf="@+id/ingredientsVerticalLinearLayout"
+                app:layout_constraintVertical_bias="0.041" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialogCocktailInstruction_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instruction: "
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientsHorizontalLinearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

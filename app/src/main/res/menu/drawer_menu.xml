@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view" >
+
+    <group android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_action_home"
+            android:title="@string/drawerMenuItem_nav_home_text" />
+
+        <item
+            android:id="@+id/nav_alcoholic"
+            android:icon="@drawable/alcoholic_cocktail"
+            android:title="@string/drawerMenuItem_nav_alcoholic_text" />
+
+        <item
+            android:id="@+id/nav_non_alcoholic"
+            android:icon="@drawable/non_alcoholic_cocktail"
+            android:title="@string/drawerMenuItem_nav_nonAlcoholic_text" />
+    </group>
+
+    <item
+        android:id="@+id/userManagementLabel"
+        android:title="@string/drawerMenuItem_UsrManagement_text"
+        android:enabled="false" />
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Users"
+            android:icon="@drawable/ic_action_users"
+            android:title="@string/drawerMenuItem_nav_Users_text" />
+    </group>
+
+
+
+
+</menu>
